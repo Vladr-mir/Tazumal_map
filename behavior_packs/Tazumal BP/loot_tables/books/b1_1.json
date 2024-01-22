@@ -1,0 +1,27 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:written_book",
+                    "functions": [
+                        {
+                            "function": "set_book_contents",
+                            "title": "B1-1",
+                            "author": "UTEC",
+                            "pages": [
+                                "  §4§lPirámide principal\n       (B1-1)§r\n\nEs la pirámide principal del sitio arqueológico y además una de las estructuras más complejas del Tazumal debido a que consta de diversas",
+                                "etapas constructivas superpuestas, de las cuales se conocen alrededor de doce.",
+                                "Estos edificios muestran el crecimiento de la ciudad y los cambios en la cultura local por la influencia e intercambio con otras regiones de Mesoamérica.\n\nTemporalmente abarca desde el período Clásico hasta el Posclásico.",
+                                "Por la complejidad estructural de la Pirámide, en la actualidad a simple vista se observan diversas etapas constructivas que se extienden por los períodos temporales antes mencionados.",
+                                "La pirámide tiene en la parte superior una estructura que se ha interpretado como un oratorio (estructura 1e) que fue excabado por Stanley Boggs."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

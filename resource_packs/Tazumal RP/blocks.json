@@ -1,0 +1,71 @@
+{
+	"1a": {
+		"sound": "wood"
+	},
+	"b1_2": {
+		"sound": "wood"
+	},
+	"b1_1": {
+		"sound": "wood"
+	},
+	"incensario1_legacy": {
+		"sound": "stone"
+	},
+	"sahumador": {
+		"sound": "stone"
+	},
+	"fungus_stone": {
+		"sound": "stone"
+	},
+	"jar_chimenea": {
+		"sound": "stone"
+	},
+	"bench_e": {
+		"sound": "stone"
+	},
+	"bench_w": {
+		"sound": "stone"
+	},
+	"bench_s": {
+		"sound": "stone"
+	},
+	"bench_n": {
+		"sound": "stone"
+	},
+	"b11_t_special": {
+		"sound": "stone"
+	},
+	"b11_special": {
+		"sound": "stone"
+	},
+	"pedestal_t_legacy": {
+		"sound": "stone"
+	},
+	"pedestal_legacy": {
+		"sound": "stone"
+	},
+	"standar_jar_legacy": {
+		"sound": "stone"
+	},
+	"museum_floor": {
+		"sound": "stone"
+	},
+	"bench": {
+		"sound": "stone"
+	},
+	"tazumal:victory_stone": {
+		"sound": "stone"
+	},
+	"tazumal:monument5": {
+		"sound": "stone"
+	},
+	"tazumal:tazumal_stone": {
+		"sound": "stone"
+	},
+	"tazumal:tazumal_adobe": {
+		"sound": "stone"
+	},
+	"tazumal:tazumal_dirt": {
+		"sound": "stone"
+	}
+}

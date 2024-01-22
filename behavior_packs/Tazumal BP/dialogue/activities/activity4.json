@@ -1,0 +1,41 @@
+{
+    "format_version": "1.19.50",
+    "minecraft:npc_dialogue": {
+        "scenes": [
+            {
+                "scene_tag": "activity4",
+                "npc_name": "§6¡Ubica las zonas!",
+                "text": "¡Hola! Queremos marcar algunas de las zonas de Tazumal de una forma llamativa ¿Nos ayudarías a marcar las zonas?",
+                "buttons": [
+                    {
+                        "name": "¡Cuenta conmigo!",
+                        "commands": [
+                            "/dialogue change @e[type=npc, tag=activity4] activity4_agree @a",
+                            "/dialogue open @e[tag=activity4] @initiator activity4_agree",
+                            "/function locate/give_items",
+                            "/setblock 146 77 -17 redstone_block"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "activity4_agree",
+                "npc_name": "§6¡Ubica las zonas!",
+                "text": "¡Genial! Puedes encontrar unas imágenes aquí a mi lado, haciendo uso de estas imágenes busca las zonas y coloca los letreros encima del marcador.\n\n",
+                "buttons": [
+                    {
+                        "name": "Ayuda",
+                        "commands": [
+                            "/function locate/give_items"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "activity4_finished",
+                "npc_name": "§6¡Muchas gracias!",
+                "text": "¡Bien hecho!"
+            }
+        ]
+    }
+}

@@ -1,0 +1,17 @@
+{
+  "format_version": "1.19.50",
+  "minecraft:block": {
+    "description": {
+      "identifier": "tazumal:tazumal_stone"
+    },
+    "components": {
+      "minecraft:geometry": "geometry.tazumal_stone",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "tazumal_tazumal_stone",
+          "render_method": "alpha_test"
+        }
+      }
+    }
+  }
+}

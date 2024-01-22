@@ -1,0 +1,17 @@
+{
+  "format_version": "1.19.50",
+  "minecraft:block": {
+    "description": {
+      "identifier": "tazumal:tazumal_adobe"
+    },
+    "components": {
+      "minecraft:geometry": "geometry.tazumal_adobe",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "tazumal_tazumal_adobe",
+          "render_method": "alpha_test"
+        }
+      }
+    }
+  }
+}

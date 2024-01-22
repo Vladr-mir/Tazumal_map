@@ -1,0 +1,46 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Tazumal",
+		"description": "Dirección de investigaciones.",
+		"uuid": "98697812-f36b-4c76-ded7-e375179d5e2c",
+		"version": [
+			1,
+			0,
+			0
+		],
+		"min_engine_version": [
+			1,
+			16,
+			0
+		]
+	},
+	"metadata": {
+		"authors": [
+			"Utec"
+		],
+		"generated_with": {
+			"blockbench_block_wizard": [
+				"1.1.2"
+			],
+			"bridge": [
+				"2.6.7"
+			],
+			"dash": [
+				"0.10.10"
+			]
+		}
+	},
+	"modules": [
+		{
+			"description": "Tazumal",
+			"type": "resources",
+			"uuid": "3753b056-380b-4f85-77fa-fdc7e3e493c7",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	]
+}

@@ -1,0 +1,108 @@
+{
+  "format_version": "1.17",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+      {
+        "scene_tag": "question2",
+        "npc_name": "§1Pregunta",
+        "text": "¿Quién fue el primer arqueólogo que excavó el §2Tazumal§r?\n\nOpción A: Shione Shibata\n\nOpción B: Stanley Boggs\n\nOpción C: Antonio Sol",
+        "buttons": [
+          {
+            "name": "Opción A",
+            "commands": [
+              "/dialogue change @e[type=npc, tag=second_question] question2_failed1 @initiator",
+              "title @initiator actionbar Intentalo de nuevo",
+              "/dialogue open @e[tag=second_question] @initiator question2_failed1"
+            ]
+          },
+          {
+            "name": "Opción B",
+            "commands": [
+              "/function general/addto_finalscore",
+              "/dialogue change @e[type=npc, tag=second_question] question2_passed @initiator",
+              "/function general/question_solved",
+              "/dialogue open @e[tag=second_question] @initiator question2_passed"
+            ]
+          },
+          {
+            "name": "Opción C",
+            "commands": [
+              "/dialogue change @e[type=npc, tag=second_question] question2_failed1 @initiator",
+              "title @initiator actionbar Intentalo de nuevo",
+              "/dialogue open @e[tag=second_question] @initiator question2_failed1"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "question2_failed1",
+        "npc_name": "Pregunta",
+        "text": "§4Fallaste§r, ¿Quién fue el primer arqueólogo que excavó el §2Tazumal§r?\n\nOpción A: Shione Shibata\n\nOpción B: Stanley Boggs\n\nOpción C: Antonio Sol",
+        "buttons": [
+          {
+            "name": "Opción A",
+            "commands": [
+              "/dialogue change @e[type=npc, tag=second_question] question2_failed2 @initiator",
+              "title @initiator actionbar Intentalo de nuevo",
+              "/dialogue open @e[tag=second_question] @initiator question2_failed2"
+            ]
+          },
+          {
+            "name": "Opción B",
+            "commands": [
+              "/scoreboard players add @initiator final_score 8",
+              "title @initiator actionbar Bien Hecho",
+              "/dialogue change @e[type=npc, tag=second_question] question2_passed @initiator",
+              "/function general/question_solved",
+              "/dialogue open @e[tag=second_question] @initiator question2_passed"
+            ]
+          },
+          {
+            "name": "Opción C",
+            "commands": [
+              "/dialogue change @e[type=npc, tag=second_question] question2_failed2 @initiator",
+              "title @initiator actionbar Intentalo de nuevo",
+              "/dialogue open @e[tag=second_question] @initiator question2_failed2"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "question2_failed2",
+        "npc_name": "Pregunta",
+        "text": "§4Fallaste§r, ¿Quién fue el primer arqueólogo que excavó el §2Tazumal§r?\n\nOpción A: Shione Shibata\n\nOpción B: Stanley Boggs\n\nOpción C: Antonio Sol",
+        "buttons": [
+          {
+            "name": "Opción A",
+            "commands": [
+              "title @initiator actionbar Intentalo de nuevo",
+              "/dialogue open @e[tag=second_question] @initiator question2_failed2"
+            ]
+          },
+          {
+            "name": "Opción B",
+            "commands": [
+              "/scoreboard players add @initiator final_score 3",
+              "title @initiator actionbar Bien Hecho",
+              "/dialogue change @e[type=npc, tag=second_question] question2_passed @initiator",
+              "/function general/question_solved",
+              "/dialogue open @e[tag=second_question] @initiator question2_passed"
+            ]
+          },
+          {
+            "name": "Opción C",
+            "commands": [
+              "title @initiator actionbar Intentalo de nuevo",
+              "/dialogue open @e[tag=second_question] @initiator question2_failed2"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "question2_passed",
+        "npc_name": "Bien hecho",
+        "text": "¡Correcto! Fue §2§lStanley Bogs§r quien excavó §2§lEl Tazumal§r por primera vez en §l1942§r."
+      }
+    ]
+  }
+}

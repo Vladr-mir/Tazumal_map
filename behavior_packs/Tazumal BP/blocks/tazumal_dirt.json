@@ -1,0 +1,17 @@
+{
+  "format_version": "1.19.50",
+  "minecraft:block": {
+    "description": {
+      "identifier": "tazumal:tazumal_dirt"
+    },
+    "components": {
+      "minecraft:geometry": "geometry.tazumal_dirt",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "tazumal_tazumal_dirt",
+          "render_method": "alpha_test"
+        }
+      }
+    }
+  }
+}

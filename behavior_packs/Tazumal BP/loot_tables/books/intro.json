@@ -1,0 +1,29 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:written_book",
+                    "functions": [
+                        {
+                            "function": "set_book_contents",
+                            "title": "Tutorial",
+                            "author": "UTEC",
+                            "pages": [
+                                "§6§l    Bienvenido/a a\n      Tazumal.§r\n\nTe damos la bienvenida a Tazumal. Aquí encontrarás §c4 actividades§r, §66 libros§r y §35 preguntas§r.\n\nSe te recomienda que realices las §6Actividades§r primero, antes que las §3Preguntas§r.",
+                                "Puedes ver las diferentes páginas de este libro con la §lflecha§r que se encuentra en la §lparte inferior derecha§r.",
+                                "§4§l      Movimiento§r\n\n              ^\n              W\n\n       <A          D>\n\n              S\n              v\n\nMantén presionada cualquiera de las teclas para moverte en la dirección respectiva.",
+                                "§6§lActividades §0y §3Preguntas§r\n\nEn el interior del museo, se encuentran §35 robots§r que te harán diferentes preguntas, sin embargo, te recomiendo realizar las §64 actividades§r  para obtener el conocimiento necesario para superar el desafío.",
+                                "§9§l      Creditos:§r\n\n§lVicerrectoría de Investigación y Proyección Social§l§r\n\nDirección de investigaciones\n\n§lDirector del proyecto§r:\n* Mtro. Saúl Campos.",
+                                "§lInformación y documentación§r:\n* Lic. Cesar Roberto Rodríguez Dueñas.\n\n* Lic. Elisa Margarita Argueta Urrutia.\n\n§lCreación del mapa§r:\n* Alejandra María Rodríguez Dueñas.\n\n* Ernesto Vladimir Rodríguez Dueñas.",
+                                "Copyright Universidad Tecnológica de El Salvador, 2023, Todos los Derechos Reservados"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

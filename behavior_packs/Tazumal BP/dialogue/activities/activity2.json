@@ -1,0 +1,32 @@
+{
+  "format_version": "1.19.50",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+      {
+        "scene_tag": "activity2",
+        "npc_name": "§c¡Excava y descubre!",
+        "text": "¿Qué tal? Estábamos buscando un artefacto en esta §4Ventana arqueológica§r ¿Te importaría ayudarnos?",
+        "buttons": [
+          {
+            "name": "¡Lo haré!",
+            "commands": [
+              "/dialogue change @e[type=npc, tag=activity2] activity2_agree @a",
+              "/dialogue open @e[tag=activity2] @initiator activity2_agree",
+              "/setblock 119 77 -54 redstone_block"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "activity2_agree",
+        "npc_name": "§c¡Excava y descubre!",
+        "text": "De acuerdo, se encuentra ahí abajo, en la esquina izquierda enterrado en ese montón de tierra. Toma esta pala, te ayudará."
+      },
+      {
+        "scene_tag": "activity2_finished",
+        "npc_name": "§c¡Lo haz encontrado!",
+        "text": "¡Bien hecho! gracias por habernos ayudado. El objeto es un cuenco de cerámica, algo muy importante para estudiar el pasado del §2Tazumal§r."
+      }
+    ]
+  }
+}

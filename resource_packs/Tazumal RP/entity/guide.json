@@ -1,0 +1,36 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "tazumal:guide",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/guide"
+			},
+			"geometry": {
+				"default": "geometry.guide"
+			},
+			"render_controllers": [
+				"controller.render.guide"
+			],
+			"spawn_egg": {
+				"base_color": "#179469",
+				"overlay_color": "#5619D0"
+			},
+			"animations": {
+				"sit": "animation.humanoid.riding.legs",
+				"look_at_target": "animation.common.look_at_target",
+				"general": "animation.guide.general",
+				"controller": "controller.animation.guide"
+			},
+			"scripts": {
+				"animate": [
+					"controller",
+					"look_at_target"
+				]
+			}
+		}
+	}
+}

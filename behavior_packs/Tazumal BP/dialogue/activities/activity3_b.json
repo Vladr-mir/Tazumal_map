@@ -1,0 +1,80 @@
+{
+  "format_version": "1.19.50",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+      {
+        "scene_tag": "activity3b",
+        "npc_name": "§3¿Tienes el libro?",
+        "text": "El libro que te han dado (§2Un juego ancestral§r) tiene un texto, dime de qué se trata.\n\nOpción A: Sobre un Juego de pelota.\n\nOpción B: Acerca de la pirámide principal (B1-1).\n\nOpción C: Los habitantes del Tazumal",
+        "buttons": [
+          {
+            "name": "Opción A",
+            "commands": [
+              "title @initiator actionbar Bien Hecho",
+              "/dialogue change @e[type=npc, tag=activity3b] activity3b_passed @a",
+              "/dialogue change @e[type=npc, tag=activity3] activity3_finished @a",
+              "function general/congratulate",
+              "/dialogue open @e[tag=activity3b] @initiator activity3b_passed",
+              "/setblock 124 91 0 air"
+            ]
+          },
+          {
+            "name": "Opción B",
+            "commands": [
+              "/dialogue change @e[type=npc, tag=activity3b] activity3b_failed @a",
+              "title @initiator actionbar Intentalo de nuevo",
+              "/dialogue open @e[tag=activity3b] @initiator activity3b_failed"
+            ]
+          },
+          {
+            "name": "Opción C",
+            "commands": [
+              "/dialogue change @e[type=npc, tag=activity3b] activity3b_failed @a",
+              "title @initiator actionbar Intentalo de nuevo",
+              "/dialogue open @e[tag=activity3b] @initiator activity3b_failed"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "activity3b_failed",
+        "npc_name": "§3¿Tienes el libro?",
+        "text": "§4No es así§r. El libro que te han dado (§2Un juego ancestral§r) tiene un texto, dime de que se trata.\n\nOpción A: Sobre un Juego de pelota.\n\nOpción B: Acerca de la piramide principal (B1-1).\n\nOpción C: Los habitantes del Tazumal",
+        "buttons": [
+          {
+            "name": "Opción A",
+            "commands": [
+              "title @initiator actionbar Bien Hecho",
+              "/dialogue change @e[type=npc, tag=activity3b] activity3b_passed @a",
+              "/dialogue change @e[type=npc, tag=activity3] activity3_finished @a",
+              "function general/congratulate",
+              "/dialogue open @e[tag=activity3b] @initiator activity3b_passed",
+              "/setblock 124 91 0 air"
+            ]
+          },
+          {
+            "name": "Opción B",
+            "commands": [
+              "/dialogue change @e[type=npc, tag=activity3b] activity3b_failed @a",
+              "title @initiator actionbar Intentalo de nuevo",
+              "/dialogue open @e[tag=activity3b] @initiator activity3b_failed"
+            ]
+          },
+          {
+            "name": "Opción C",
+            "commands": [
+              "/dialogue change @e[type=npc, tag=activity3b] activity3b_failed @a",
+              "title @initiator actionbar Intentalo de nuevo",
+              "/dialogue open @e[tag=activity3b] @initiator activity3b_failed"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "activity3b_passed",
+        "npc_name": "§3¡Eso es!",
+        "text": "Lo adivinaste! así es, la estructura al lado del museo (B1-4, B1-3) es interpretada como un juego de pelota.\n\nTen, te dejaré una copia del libro."
+      }
+    ]
+  }
+}

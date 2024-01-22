@@ -1,0 +1,40 @@
+{
+  "format_version": "1.19.50",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+      {
+        "scene_tag": "activity1",
+        "npc_name": "§6¡Reconstruye las columnas!",
+        "text": "¡Hola! algunas de las columnas se encuentran dañadas por el deterioro ¿Te importaría ayudarnos a restaurar estas §6columnas§r?",
+        "buttons": [
+          {
+            "name": "¡Lo haré!",
+            "commands": [
+              "/dialogue change @e[type=npc, tag=activity1] activity1_agree @a",
+              "/dialogue open @e[tag=activity1] @initiator activity1_agree",
+              "/function columns/give_items"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "activity1_agree",
+        "npc_name": "§6¡Reconstruye las columnas!",
+        "text": "Muy bien, te he marcado las columnas con colores para que sepas dónde colocar cada material, dirígete arriba de las escalinatas para empezar.\nEl código de colores es el siguiente:\n\nTierra: §2Verde§r\n\nAdobe: §4Rojo§r\n\nPiedra: §1Azul§r",
+        "buttons": [
+          {
+            "name": "Ayuda",
+            "commands": [
+              "/function columns/give_items"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "activity1_finished",
+        "npc_name": "§6¡Lo haz hecho!",
+        "text": "¡Bien hecho! gracias por haber reparado las columnas, recuerda que el §6§ledificio de las columnas§r esta hecho de:\n\n§2Tierra§r\n\n§4Adobe§r\n\n§1Piedra§r"
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:written_book",
+                    "functions": [
+                        {
+                            "function": "set_book_contents",
+                            "title": "Habitantes",
+                            "author": "UTEC",
+                            "pages": [
+                                "§2§l Los Habitantes del\n        Tazumal§r\n\nStanley Boggs propuso que el grupo cultural que habitó el Tazumal en la Zona Arqueológica de Chalchuapa, fueron Pipiles",
+                                "esto lo relacionó con los tipos cerámicos encontrados en sitios arqueológicos de esta zona, que se asocian a esta cultura, junto con otros elementos que relacionan a la Zona Arqueológica de Chalchuapa con otros sitios arqueológicos",
+                                "comparando la estructura del sitio arqueológico San Andrés como \"La Campana\" con la arquitectura de Tazumal"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

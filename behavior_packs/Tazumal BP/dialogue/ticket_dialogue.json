@@ -1,0 +1,27 @@
+{
+  "format_version": "1.17",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+      {
+        "scene_tag": "ticket",
+        "npc_name": "§1¡Hola!",
+        "text": "¡Bienvenido/a! al Tazumal, aqui encontrarás §l§6cuatro actividades§r que tendrás que realizar.\nAl finalizar dichas actividades, tendrás que dirigirte al museo a responder §l§6cinco preguntas§r.\n\n¡Dale click al botón de abajo para comenzar!",
+        "buttons": [
+          {
+            "name": "§1§l¡Empecemos!",
+            "commands": [
+              "/dialogue change @e[tag=ticket] ticket_finished @a",
+              "/setblock 152 77 -69 redstone_block",
+              "/loot give @a loot ticket"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "ticket_finished",
+        "npc_name": "§1¡Disfruta tu visita!",
+        "text": "¡Bienvenido/a! al Tazumal, aqui encontrarás §l§6cuatro actividades§r que tendrás que realizar.\nAl finalizar dichas actividades, tendrás que dirigirte al museo a responder §l§6cinco preguntas§r."
+      }
+    ]
+  }
+}

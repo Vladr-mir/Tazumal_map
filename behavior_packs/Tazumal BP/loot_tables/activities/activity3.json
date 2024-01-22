@@ -1,0 +1,24 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:written_book",
+					"functions": [
+						{
+							"function": "set_book_contents",
+							"author": "UTEC",
+							"title": "Juego Ancestral",
+							"pages": [
+								"   §c§lJuego de pelota§r\n\nLas estructuras B1-3 y B1-4 del sitio arqueológico, son dos montículos que se han interpretado, como un juego de pelota.",
+								"Esto se debe a que la estructura tiene forma de \"I\", que se asocia a las estructuras de cancha del juego de pelota Mesoamericano.\n\nLa zona anteriormente formaba parte del cementerio municipal hasta que fue agregada al parque arqueológico."
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

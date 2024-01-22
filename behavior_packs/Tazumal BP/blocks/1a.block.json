@@ -1,0 +1,39 @@
+{
+	"format_version": "1.19.50",
+	"minecraft:block": {
+		"description": {
+			"identifier": "task:1a",
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"origin": [
+					-4,
+					0,
+					-4
+				],
+				"size": [
+					8,
+					16,
+					8
+				]
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 1
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 15
+			},
+			"minecraft:geometry": "geometry.1a",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "1a",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:map_color": "#ffffff"
+		}
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"resource_pack_name": "Tazumal",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"tazumal_polycromocopador": {
+			"textures": "textures/items/polycromocopador"
+		},
+		"brick": {
+			"textures": "textures/items/brick"
+		}
+	}
+}

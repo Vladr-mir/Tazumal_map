@@ -1,0 +1,108 @@
+{
+  "format_version": "1.19.50",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+      {
+        "scene_tag": "question1",
+        "npc_name": "§1Pregunta",
+        "text": "¿En qué año iniciaron las primeras exacavaciones del §2Tazumal§r?\n\nOpción A: 2005\n\nOpción B: 1984\n\nOpción C: 1942",
+        "buttons": [
+          {
+            "name": "Opción A",
+            "commands": [
+              "/dialogue change @e[type=npc, tag=first_question] question1_failed1 @initiator",
+              "title @initiator actionbar Inténtalo de nuevo",
+              "/dialogue open @e[tag=first_question] @initiator question1_failed1"
+            ]
+          },
+          {
+            "name": "Opción B",
+            "commands": [
+              "/dialogue change @e[type=npc, tag=first_question] question1_failed1 @initiator",
+              "title @initiator actionbar Inténtalo de nuevo",
+              "/dialogue open @e[tag=first_question] @initiator question1_failed1"
+            ]
+          },
+          {
+            "name": "Opción C",
+            "commands": [
+              "/function general/addto_finalscore",
+              "/dialogue change @e[type=npc, tag=first_question] question1_passed @initiator",
+              "/function general/question_solved",
+              "/dialogue open @e[tag=first_question] @initiator question1_passed"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "question1_failed1",
+        "npc_name": "Pregunta",
+        "text": "§4Fallaste§r, inténtalo de nuevo. ¿En qué año iniciaron las primeras exacavaciones del §2Tazumal§r?\n\nOpción A: 2005\n\npción B: 1984\n\nOpción C: 1942",
+        "buttons": [
+          {
+            "name": "Opción A",
+            "commands": [
+              "/dialogue change @e[type=npc, tag=first_question] question1_failed2 @initiator",
+              "title @initiator actionbar Inténtalo de nuevo",
+              "/dialogue open @e[tag=first_question] @initiator question1_failed2"
+            ]
+          },
+          {
+            "name": "Opción B",
+            "commands": [
+              "/dialogue change @e[type=npc, tag=first_question] question1_failed2 @initiator",
+              "title @initiator actionbar Inténtalo de nuevo",
+              "/dialogue open @e[tag=first_question] @initiator question1_failed2"
+            ]
+          },
+          {
+            "name": "Opción C",
+            "commands": [
+              "/scoreboard players add @initiator final_score 8",
+              "title @initiator actionbar Bien Hecho",
+              "/dialogue change @e[type=npc, tag=first_question] question1_passed @initiator",
+              "/function general/question_solved",
+              "/dialogue open @e[tag=first_question] @initiator question1_passed"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "question1_failed2",
+        "npc_name": "Pregunta",
+        "text": "§4Fallaste§r, inténtalo de nuevo. ¿En qué año iniciaron las primeras exacavaciones del §2Tazumal§r?\n\nOpción A: 2005\n\npción B: 1984\n\nOpción C: 1942",
+        "buttons": [
+          {
+            "name": "Opción A",
+            "commands": [
+              "title @initiator actionbar Intentalo de nuevo",
+              "/dialogue open @e[tag=first_question] @initiator question1_failed1"
+            ]
+          },
+          {
+            "name": "Opción B",
+            "commands": [
+              "title @initiator actionbar Intentalo de nuevo",
+              "/dialogue open @e[tag=first_question] @initiator question1_failed1"
+            ]
+          },
+          {
+            "name": "Opción C",
+            "commands": [
+              "/scoreboard players add @initiator final_score 3",
+              "title @initiator actionbar Bien Hecho",
+              "/dialogue change @e[type=npc, tag=first_question] question1_passed @initiator",
+              "/function general/question_solved",
+              "/dialogue open @e[tag=first_question] @initiator question1_passed"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "question1_passed",
+        "npc_name": "Bien hecho",
+        "text": "¡Bien hecho! Así es, se iniciaron las primeras excavaciones de el Tazumal en §2§l1942§r por §1§lStanley Boggs§r."
+      }
+    ]
+  }
+}

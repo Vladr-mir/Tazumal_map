@@ -1,0 +1,108 @@
+{
+  "format_version": "1.17",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+      {
+        "scene_tag": "question5",
+        "npc_name": "§1Pregunta",
+        "text": "¿Cómo se le denomina a la pirámide principal del §2Tazumal§r?\n\nOpción A: B1-1\n\nOpción B: K-43\n\nOpción C: J2-1",
+        "buttons": [
+          {
+            "name": "Opción A",
+            "commands": [
+              "/function general/addto_finalscore",
+              "/dialogue change @e[type=npc, tag=fifth_question] question5_passed @initiator",
+              "/function general/question_solved",
+              "/dialogue open @e[tag=fifth_question] @initiator question5_passed"
+            ]
+          },
+          {
+            "name": "Opción B",
+            "commands": [
+              "/dialogue change @e[type=npc, tag=fifth_question] question5_failed1 @initiator",
+              "title @initiator actionbar Intentalo de nuevo",
+              "/dialogue open @e[tag=fifth_question] @initiator question5_failed1"
+            ]
+          },
+          {
+            "name": "Opción C",
+            "commands": [
+              "/dialogue change @e[type=npc, tag=fifth_question] question5_failed1 @initiator",
+              "title @initiator actionbar Intentalo de nuevo",
+              "/dialogue open @e[tag=fifth_question] @initiator question5_failed1"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "question5_failed1",
+        "npc_name": "Pregunta",
+        "text": "§4Fallaste§r, ¿Cómo se le denomina a la pirámide principal del §2Tazumal§r?\n\nOpción A: B1-1\n\nOpción B: K-43\n\nOpción C: J2-1",
+        "buttons": [
+          {
+            "name": "Opción A",
+            "commands": [
+              "/scoreboard players add @initiator final_score 8",
+              "title @initiator actionbar Bien Hecho",
+              "/dialogue change @e[type=npc, tag=fifth_question] question5_passed @initiator",
+              "/function general/question_solved",
+              "/dialogue open @e[tag=fifth_question] @initiator question5_passed"
+            ]
+          },
+          {
+            "name": "Opción B",
+            "commands": [
+              "/dialogue change @e[type=npc, tag=fifth_question] question5_failed2 @initiator",
+              "title @initiator actionbar Intentalo de nuevo",
+              "/dialogue open @e[tag=fifth_question] @initiator question5_failed2"
+            ]
+          },
+          {
+            "name": "Opción C",
+            "commands": [
+              "/dialogue change @e[type=npc, tag=fifth_question] question5_failed2 @initiator",
+              "title @initiator actionbar Intentalo de nuevo",
+              "/dialogue open @e[tag=fifth_question] @initiator question5_failed2"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "question5_failed2",
+        "npc_name": "Pregunta",
+        "text": "§4Fallaste§r, ¿Cómo se le denomina a la pirámide principal del §2Tazumal§r?\n\nOpción A: B1-1\n\nOpción B: K-43\n\nOpción C: J2-1",
+        "buttons": [
+          {
+            "name": "Opción A",
+            "commands": [
+              "/scoreboard players add @initiator final_score 3",
+              "title @initiator actionbar Bien Hecho",
+              "/dialogue change @e[type=npc, tag=fifth_question] question5_passed @initiator",
+              "/function general/question_solved",
+              "/dialogue open @e[tag=fifth_question] @initiator question5_passed"
+            ]
+          },
+          {
+            "name": "Opción B",
+            "commands": [
+              "title @initiator actionbar Intentalo de nuevo",
+              "/dialogue open @e[tag=fifth_question] @initiator question5_failed2"
+            ]
+          },
+          {
+            "name": "Opción C",
+            "commands": [
+              "title @initiator actionbar Intentalo de nuevo",
+              "/dialogue open @e[tag=fifth_question] @initiator question5_failed2"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "question5_passed",
+        "npc_name": "Bien hecho",
+        "text": "¡Increíble! En efecto, La piramide principal del §l§2Tazumal§r se denomina §1B1-1"
+      }
+    ]
+  }
+}

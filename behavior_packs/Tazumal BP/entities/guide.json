@@ -1,0 +1,90 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "tazumal:guide",
+			"runtime_identifier": "npc",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {},
+		"components": {
+			"minecraft:physics": {},
+			"minecraft:movement.basic": {},
+			"minecraft:navigation.walk": {
+				"can_open_doors": true,
+				"can_jump": true,
+				"can_sink": false,
+				"can_swim": true,
+				"can_walk": true
+			},
+			"minecraft:jump.static": {},
+			"minecraft:movement": {
+				"value": 0.5
+			},
+			"minecraft:type_family": {
+				"family": [
+					"npc",
+					"mob"
+				]
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "all",
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:persistent": {},
+			"minecraft:npc": {
+				"npc_data": {
+					"portrait_offsets": {
+						"translate": [
+							-7,
+							50,
+							0
+						],
+						"scale": [
+							1.75,
+							1.75,
+							1.75
+						]
+					},
+					"picker_offsets": {
+						"translate": [
+							0,
+							20,
+							0
+						],
+						"scale": [
+							1.7,
+							1.7,
+							1.7
+						]
+					},
+					"skin_list": [
+						{
+							"variant": 0
+						}
+					]
+				}
+			},
+			"minecraft:fire_immune": true,
+			"minecraft:behavior.look_at_player": {
+				"priority": 0,
+				"look_distance": 6,
+				"probability": 0.02
+			},
+			"minecraft:nameable": {
+				"always_show": false,
+				"allow_name_tag_renaming": false
+			},
+			"minecraft:behavior.random_look_around": {
+				"priority": 1
+			}
+		},
+		"events": {}
+	}
+}

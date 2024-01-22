@@ -1,0 +1,26 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:written_book",
+                    "functions": [
+                        {
+                            "function": "set_book_contents",
+                            "title": "TAZUMAL",
+                            "author": "UTEC",
+                            "pages": [
+                                "         §2§lTAZUMAL§r\n\nEl sitio arqueológico está localizado en el municipio de Chalchuapa, departamento de Santa Ana. El Tazumal forma parte de lo que se conoce como Zona Arqueológica Chalchuapa.",
+                                "Fue descubierto en la decada de los años 40's por Stanley Boggs quien realizó las primeras excavaciones en el sitio comenzando en 1942 y culminando en 1953, realizando también trabajos de restauración en las estructuras.",
+                                "Las culturas que tuvieron influencia en los estilos arquitectónicos del sitio han sido la cultura Maya y culturas del altiplano de México (Olmecas, Teotihuacanas y Toltecas).",
+                                "El sitio cuenta con una gran cantidad de estructuras y fases constructivas lo que lo convierte en un sitio de gran complejidad y valor cultural."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

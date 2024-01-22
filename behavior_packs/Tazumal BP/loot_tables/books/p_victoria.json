@@ -1,0 +1,24 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:written_book",
+                    "functions": [
+                        {
+                            "function": "set_book_contents",
+                            "title": "P. Las Victorias",
+                            "author": "UTEC",
+                            "pages": [
+                                "       §3§lPiedra de\n   \"Las Victorias\"§r\n\nFue descubierta en 1940 por Stanley Boggs. Muestra un grabado que representa una persona como figura principal, tiene características de la cultura Olmeca como: capa, casco y lo que podría ser un espejo.",
+                                "La figura principal parece realizar la acción de caminar sobre una estructura, mientras porta un objeto que parece ser un bastón decorado. Está fechado aproximadamente entre 900 a 600 a.C"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,77 @@
+{
+	"resource_pack_name": "vanilla",
+	"texture_name": "atlas.terrain",
+	"padding": 8,
+	"num_mip_levels": 4,
+	"texture_data": {
+		"1a": {
+			"textures": "textures/blocks/1a.png"
+		},
+		"b1_2": {
+			"textures": "textures/blocks/b1_2.png"
+		},
+		"b1_1": {
+			"textures": "textures/blocks/b1_1.png"
+		},
+		"incensario1_legacy": {
+			"textures": "textures/blocks/incensario1_legacy.png"
+		},
+		"sahumador": {
+			"textures": "textures/blocks/sahumador.png"
+		},
+		"fungus_stone": {
+			"textures": "textures/blocks/fungus_stone.png"
+		},
+		"jar_chimenea": {
+			"textures": "textures/blocks/jar_chimenea.png"
+		},
+		"bench_e": {
+			"textures": "textures/blocks/bench_e.png"
+		},
+		"bench_w": {
+			"textures": "textures/blocks/bench_w.png"
+		},
+		"bench_s": {
+			"textures": "textures/blocks/bench_s.png"
+		},
+		"bench_n": {
+			"textures": "textures/blocks/bench_n.png"
+		},
+		"b11_t_special": {
+			"textures": "textures/blocks/b11_t_special.png"
+		},
+		"b11_special": {
+			"textures": "textures/blocks/b11_special.png"
+		},
+		"pedestal_t_legacy": {
+			"textures": "textures/blocks/pedestal_t_legacy.png"
+		},
+		"pedestal_legacy": {
+			"textures": "textures/blocks/pedestal_legacy.png"
+		},
+		"standar_jar_legacy": {
+			"textures": "textures/blocks/standar_jar_legacy.png"
+		},
+		"museum_floor": {
+			"textures": "textures/blocks/museum_floor.png"
+		},
+		"bench": {
+			"textures": "textures/blocks/bench.png"
+		},
+		"tazumal_victory_stone": {
+			"textures": "textures/blocks/victory_stone"
+		},
+		"tazumal_monument5": {
+			"textures": "textures/blocks/monumento5"
+		},
+		"tazumal_tazumal_stone": {
+			"textures": "textures/blocks/tazumal_stone"
+		},
+		"tazumal_tazumal_adobe": {
+			"textures": "textures/blocks/tazumal_adobe"
+		},
+		"tazumal_tazumal_dirt": {
+			"textures": "textures/blocks/tazumal_dirt"
+		}
+	}
+}

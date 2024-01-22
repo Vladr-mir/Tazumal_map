@@ -1,0 +1,43 @@
+{
+    "format_version": "1.19.50",
+    "minecraft:npc_dialogue": {
+        "scenes": [
+            {
+                "scene_tag": "activity3",
+                "npc_name": "§6¡Entrega este libro!",
+                "text": "¡Oye! Me gustaría que le lleves este libro a mi amiga quien se encuentra al lado de la §5Piedra de las victorias§r, Al lado del museo.",
+                "buttons": [
+                    {
+                        "name": "¡Cuenta conmigo!",
+                        "commands": [
+                            "/dialogue change @e[type=npc, tag=activity3] activity3_agree @a",
+                            "/dialogue open @e[tag=activity3] @initiator activity3_agree",
+                            "/loot give @a loot \"activities/activity3\"",
+                            "/setblock 124 91 0 beacon",
+                            "/setblock 106 91 23 air",
+                            "/setblock 138 77 -24 redstone_block"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "activity3_agree",
+                "npc_name": "§6!Entrega este libro¡",
+                "text": "¡Muy bien! Recuerda, ella se encuentra al lado de la §5Piedra de las victorias§r Al lado del museo.\n\nEl libro se llama: §2Un juego ancestral§r",
+                "buttons": [
+                    {
+                        "name": "Ayuda",
+                        "commands": [
+                            "/loot give @a loot \"activities/activity3\""
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "activity3_finished",
+                "npc_name": "§6!Lo haz hecho, increíble¡",
+                "text": "¡Muchas gracias! realmente me ayudaste a mi amiga y a mí, y efectivamente, El libro \"§2Un juego ancestral§r\" Tiene como tema el Juego de pelota"
+            }
+        ]
+    }
+}
